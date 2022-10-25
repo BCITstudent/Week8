@@ -9,4 +9,12 @@
     background-color: gray;
     padding: 5px;
     margin: 5px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#one{
+    /*flex-basis:100px; */
+    flex-shrink: 0;
+    /*flex-grow: 2; */
 }
