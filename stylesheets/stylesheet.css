@@ -1,8 +1,9 @@
-.container{
+/* .container{
     background-color: lightblue;
     display: flex;
     justify-content:center;
     align-items:center;
+    flex-wrap: wrap;
 }
 
 .container div{
@@ -15,6 +16,53 @@
 
 #one{
     /*flex-basis:100px; */
-    flex-shrink: 0;
+    /*flex-shrink: 0; */
     /*flex-grow: 2; */
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}    
+
+header{
+    background-color: lightblue;
+    flex-basis: 100%;
+    order:1;
+  }
+
+main{
+    background-color: gray;
+    flex-basis:500px;
+    flex-grow:1;
+    order:3;
+  }
+  
+nav{
+    background-color: teal;
+    flex-basis: 200px;
+    flex-grow: 1;
+    order:2;
+  }
+
+aside{
+    background-color: green;
+    flex-basis:200px;
+    flex-grow: 1;
+    order:4;
+  }
+
+footer{
+    background-color: pink;
+    flex-basis: 100%;
+    order: 5;
+  }
+
+ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li{
+    margin:5px;
 }
